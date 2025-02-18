@@ -1,4 +1,3 @@
-Welcome to the AI Community of Practice at Verizon CSG
 Your One-Stop Hub for AI Learning, Experimentation & Adoption
 AI is transforming the way we work, and our mission is to empower every team at Verizon CSG to adopt AI, enhance AI maturity, and drive excellence in practice. Whether you're just starting or already an expert, this community is here to help you learn, collaborate, and innovate with AI.
 
@@ -12,3 +11,6 @@ What You’ll Find Here:
 👉 Be part of the AI transformation. Explore, learn, and lead the AI revolution at Verizon CSG!
 
 📌 Start your AI journey today!
+
+
+Supercharge your coding with AI-powered pair programming! Get real-time suggestions, debug faster, and build smarter solutions.
