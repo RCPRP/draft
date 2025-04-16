@@ -1,5 +1,58 @@
 AIzaSyDxxtyXImGKEP41OO-oVB0ZQrfGEjy3NXg
 
+                          ┌────────────────────────────┐
+                          │    Developer / App Layer   │
+                          └────────────┬───────────────┘
+                                       │
+                                       ▼
+                          ┌────────────────────────────┐
+                          │     Query Interception      │
+                          │  (Proxy / API Gateway)      │
+                          └────────────┬───────────────┘
+                                       │
+                          (Passes SQL query payload)
+                                       │
+                                       ▼
+                      ┌────────────────────────────────────┐
+                      │      Agentic AI Coordinator         │
+                      │ (Orchestrates tools & decisions)    │
+                      └────────────┬───────────────┬────────┘
+                                   │               │
+                        ┌──────────▼───────┐ ┌─────▼─────────┐
+                        │   Static SQL     │ │   LLM Agent    │
+                        │   Analyzer Tool  │ │ (e.g. GPT-4)   │
+                        │ (e.g., sqlfluff, │ │ Analyzes +     │
+                        │  sqlite-parser)  │ │ classifies)    │
+                        └──────────┬───────┘ └─────┬─────────┘
+                                   │               │
+                                   ▼               ▼
+                       ┌───────────────────────────────┐
+                       │ Agent Decision Layer (Router) │
+                       └───────┬────────────┬──────────┘
+                               │            │
+      ┌────────────────────────┘            └────────────────────────┐
+      ▼                                                           ▼
+┌──────────────┐                                         ┌────────────────────┐
+│ Query OK     │                                         │  Escalate to Human │
+│ (Execute in  │                                         │  (Slack, dashboard)│
+│ production)  │                                         └────────────────────┘
+└──────┬───────┘
+       │
+       ▼
+┌────────────────────┐
+│ Auto Rewrite Query │ <─┐
+│ (LLM optimization) │   │ (If optimizable)
+└────────┬───────────┘   │
+         ▼               │
+┌────────────────────┐  │
+│ Re-evaluate/Reclass│──┘
+│ → Then Execute/Flag│
+└────────────────────┘
+
+
+
+
+
 
 Your One-Stop Hub for AI Learning, Experimentation & Adoption
 AI is transforming the way we work, and our mission is to empower every team at Verizon CSG to adopt AI, enhance AI maturity, and drive excellence in practice. Whether you're just starting or already an expert, this community is here to help you learn, collaborate, and innovate with AI.
