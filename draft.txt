@@ -1,4 +1,39 @@
-AIzaSyDxxtyXImGKEP41OO-oVB0ZQrfGEjy3NXg
+🔧 Scenario 1: Invoice Processing
+Simple AI: OCR model to extract fields like invoice number, amount, and date.
+
+RPA: Automatically reads emails, downloads invoices, and enters the data into SAP.
+
+Agentic AI: When invoice formats vary widely across vendors, the agent tries different parsing strategies, contacts a vendor for missing info, and files the ticket if errors persist.
+
+📩 Scenario 2: Handling Support Emails
+Simple AI: Email classifier that tags the email category (e.g., billing, technical issue).
+
+RPA: Routes the email to the right department or logs a support ticket.
+
+Agentic AI: Reads the email, checks relevant internal systems, drafts and sends a response, follows up if no reply in 3 days, and closes the loop once the issue is resolved.
+
+🔍 Scenario 3: Resume Screening for Hiring
+Simple AI: Model that scores resumes based on keywords and experience.
+
+RPA: Downloads resumes from a portal and updates the HRMS system.
+
+Agentic AI: Reviews resumes, schedules interviews with available panelists, drafts feedback reminders to interviewers, and flags top candidates with reasoning.
+
+🛠️ Scenario 4: IT Helpdesk Ticket Resolution
+Simple AI: Predicts ticket resolution time or routes ticket based on urgency.
+
+RPA: Logs into ITSM tool, closes low-priority tickets with canned responses.
+
+Agentic AI: Detects duplicate issues, aggregates past resolutions, applies fixes proactively, notifies users, and tracks if the issue reoccurs.
+
+📊 Scenario 5: Market Research Report Generation
+Simple AI: Extracts trends from a dataset or performs sentiment analysis on reviews.
+
+RPA: Collects data from 10 competitor websites and compiles it into Excel.
+
+Agentic AI: Scrapes data, summarizes insights, generates a visual report, drafts recommendations, and emails it weekly to decision-makers with updated trends.
+
+
 
                           ┌────────────────────────────┐
                           │    Developer / App Layer   │
