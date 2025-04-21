@@ -4,35 +4,40 @@ Simple AI: OCR model to extract fields like invoice number, amount, and date.
 RPA: Automatically reads emails, downloads invoices, and enters the data into SAP.
 
 Agentic AI: When invoice formats vary widely across vendors, the agent tries different parsing strategies, contacts a vendor for missing info, and files the ticket if errors persist.
-
+✅ Use RPA when the steps are fixed.
+❌ Don’t use Agentic AI unless you're handling a wide variety of edge cases.
 📩 Scenario 2: Handling Support Emails
 Simple AI: Email classifier that tags the email category (e.g., billing, technical issue).
 
 RPA: Routes the email to the right department or logs a support ticket.
 
 Agentic AI: Reads the email, checks relevant internal systems, drafts and sends a response, follows up if no reply in 3 days, and closes the loop once the issue is resolved.
-
+✅ Combine Simple AI + RPA for basic triage.
+✅ Use Agentic AI only when you need decision-making + follow-up.
 🔍 Scenario 3: Resume Screening for Hiring
 Simple AI: Model that scores resumes based on keywords and experience.
 
 RPA: Downloads resumes from a portal and updates the HRMS system.
 
 Agentic AI: Reviews resumes, schedules interviews with available panelists, drafts feedback reminders to interviewers, and flags top candidates with reasoning.
-
+✅ Use Simple AI + RPA for structured hiring funnels.
+❌ Don’t jump to Agentic AI unless the hiring workflow is dynamic and complex.
 🛠️ Scenario 4: IT Helpdesk Ticket Resolution
 Simple AI: Predicts ticket resolution time or routes ticket based on urgency.
 
 RPA: Logs into ITSM tool, closes low-priority tickets with canned responses.
 
 Agentic AI: Detects duplicate issues, aggregates past resolutions, applies fixes proactively, notifies users, and tracks if the issue reoccurs.
-
+✅ Start with Simple AI + RPA for efficiency.
+✅ Add Agentic AI if self-healing and follow-ups are required.
 📊 Scenario 5: Market Research Report Generation
 Simple AI: Extracts trends from a dataset or performs sentiment analysis on reviews.
 
 RPA: Collects data from 10 competitor websites and compiles it into Excel.
 
 Agentic AI: Scrapes data, summarizes insights, generates a visual report, drafts recommendations, and emails it weekly to decision-makers with updated trends.
-
+✅ Use Simple AI + RPA to gather and process data.
+✅ Use Agentic AI to drive insights & decision delivery.
 
 
                           ┌────────────────────────────┐
